@@ -45,3 +45,12 @@ df.groupby('column').mean()
 
 # quero saber a media de column1 quando coluna2 = 1
 df.groupby('column2').mean()
+
+
+# break on dict comprehension
+
+# remove list of columns from dataframe
+
+# remove list of rows from dataframe
+
+
