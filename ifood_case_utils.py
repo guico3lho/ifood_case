@@ -33,6 +33,9 @@ ordinalEncoder = OrdinalEncoder(categories=categories)
 df['Education_Cat'] = ordinalEncoder.fit_transform(df['Education'].values.reshape(-1, 1))
 df['Education_Cat'] = df['Education_Cat'].astype(int)
 
+# remove rows with missing values
+
+
 
 
 
