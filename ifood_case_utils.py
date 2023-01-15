@@ -1,3 +1,4 @@
+from sklearn.preprocessing import MinMaxScaler
 
 
 def main():
@@ -63,3 +64,7 @@ for name, model in models:
 for split_size in np.arange(0.1, 1.0, 0.1):
     X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=split_size, random_state=2)
     print("Train size: %d, test size: %d" % (len(X_train), len(X_test)))
+
+
+ss = MinMaxScaler()
+X_train = ss.fit_transform(X_train)
